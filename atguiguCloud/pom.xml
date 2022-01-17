@@ -7,10 +7,12 @@
   <groupId>com.yxpj</groupId>
   <artifactId>atguiguCloud</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
   <modules>
     <module>cloud-provider-payment8001</module>
   </modules>
-  <packaging>pom</packaging>
+
 
   <name>Maven</name>
   <!-- FIXME change it to the project's website -->

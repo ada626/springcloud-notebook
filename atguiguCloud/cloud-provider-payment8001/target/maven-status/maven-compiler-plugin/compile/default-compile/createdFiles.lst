@@ -1,0 +1,4 @@
+com\yxpj\springcloud\common\CommonResult.class
+com\yxpj\springcloud\dao\PaymentDao.class
+com\yxpj\springcloud\entities\Payment.class
+com\yxpj\springcloud\PaymentMain8001.class
