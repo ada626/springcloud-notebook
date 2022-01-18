@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/yxpj/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/yxpj/springcloud/controller/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/yxpj/springcloud/dao/PaymentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/yxpj/springcloud/dao/PaymentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/yxpj/springcloud/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/yxpj/springcloud/service/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/mapper/PaymentMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/com/yxpj/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/com/yxpj/springcloud/controller/PaymentController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +211,7 @@
       <workItem from="1642401086370" duration="823000" />
       <workItem from="1642401931566" duration="4408000" />
       <workItem from="1642407329497" duration="3710000" />
-      <workItem from="1642472099566" duration="6630000" />
+      <workItem from="1642472099566" duration="7006000" />
     </task>
     <servers />
   </component>
