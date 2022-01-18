@@ -1,6 +1,10 @@
 server:
   port:8080
 
+spring:
+  application:
+    name: cloud-consumer-order
+
 eureka:
   client:
     register-with-eureka: true #表示向注册中心注册自己 默认为true
