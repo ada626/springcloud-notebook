@@ -35,7 +35,7 @@ public class PaymentController {
         Payment paymentById = paymentService.getPaymentById(id);
         if (paymentById!=null) {
             //方法体内部会new，这里就不用写new 了
-            return new CommonResult(200,"插入成功，使用端口："+serverPort, paymentById);
+            return new CommonResult(200,"查询成功，使用端口："+ serverPort, paymentById);
         }else{
             return new CommonResult(555,"查询数据库失败啦");
         }
