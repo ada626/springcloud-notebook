@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class MyRule {
 
     @Bean
-    public IRule myRule(){
+    public IRule MyRule(){
         return new RandomRule();
     }
 }

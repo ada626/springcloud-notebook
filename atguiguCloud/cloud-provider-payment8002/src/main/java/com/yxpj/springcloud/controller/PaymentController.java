@@ -39,4 +39,8 @@ public class PaymentController {
             return new CommonResult(555,"查询数据库失败啦");
         }
     }
+    @GetMapping("/lb")
+    public String getPayemntLb(){
+        return serverPort;
+    }
 }
