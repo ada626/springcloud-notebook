@@ -10,7 +10,6 @@ public class ApplicationContextConfig {
     //applicationContext.xml <bean id="" class="">
 //    在bean容器中加入RestTemplate对象
     @Bean
-//    @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
