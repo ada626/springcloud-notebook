@@ -1,5 +1,7 @@
 package com.yxpj.springcloud.controller;
 
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EurekaDiscoveryClient;
 import com.yxpj.springcloud.common.CommonResult;
 import com.yxpj.springcloud.entities.Payment;
 import com.yxpj.springcloud.service.PaymentService;
@@ -15,6 +17,9 @@ import javax.annotation.Resource;
 public class PaymentController {
     @Resource
     private PaymentService paymentService;
+
+    @Resource
+    private DiscoveryClient discoveryClient;
 
     @Value("${server.port}")
     private String serverPort;
@@ -38,4 +43,6 @@ public class PaymentController {
             return new CommonResult(555,"查询数据库失败啦");
         }
     }
+
+
 }
