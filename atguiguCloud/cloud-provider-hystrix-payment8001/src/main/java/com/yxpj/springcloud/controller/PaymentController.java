@@ -37,7 +37,12 @@ public class PaymentController {
         log.info("***************result:"+s);
         return s;
     }
-
+    @GetMapping("/payment/hystrix/break/{id}")
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info(result);
+        return result;
+    }
     private String payment_Global_FallbackMethod() {
         return "Global异常处理信息,请稍后再试。";
     }

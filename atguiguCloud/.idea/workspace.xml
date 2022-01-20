@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b73fe6ce-45a3-4a90-b9dd-89e64bc76223" name="Default Changelist" comment="" />
+    <list default="true" id="b73fe6ce-45a3-4a90-b9dd-89e64bc76223" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/target/classes/com/yxpj/springcloud/service/PaymentHystrixService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/target/classes/com/yxpj/springcloud/service/PaymentHystrixService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,10 +168,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderHystrixMain8080" />
         <item itemvalue="Spring Boot.PaymentHystrixMain8001" />
         <item itemvalue="Spring Boot.EurekaApplication7002" />
         <item itemvalue="Spring Boot.EurekaApplication7001" />
-        <item itemvalue="Spring Boot.OrderHystrixMain8080" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +197,7 @@
       <workItem from="1642472099566" duration="11065000" />
       <workItem from="1642552795028" duration="12261000" />
       <workItem from="1642604276353" duration="9949000" />
-      <workItem from="1642659745580" duration="4881000" />
+      <workItem from="1642659745580" duration="6129000" />
     </task>
     <servers />
   </component>
