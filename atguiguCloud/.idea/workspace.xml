@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b73fe6ce-45a3-4a90-b9dd-89e64bc76223" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-order8080/src/main/java/com/yxpj/springcloud/config/FeignConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign-order8080/src/main/java/com/yxpj/springcloud/service/PaymentFeignService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-feign-order8080/src/main/java/com/yxpj/springcloud/service/PaymentFeignService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign-order8080/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-feign-order8080/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yxpj/springcloud/lb/impl/MyLb.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yxpj/springcloud/lb/impl/MyLb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/yxpj/springcloud/lb/impl/MyLb.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/yxpj/springcloud/lb/impl/MyLb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/src/main/java/com/yxpj/springcloud/OrderHystrixMain8080.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/src/main/java/com/yxpj/springcloud/controller/OrderHystrixController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/src/main/java/com/yxpj/springcloud/service/PaymentHystrixService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order8080/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/com/yxpj/springcloud/PaymentHystrixMain8001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/com/yxpj/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/com/yxpj/springcloud/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign-order8080/src/main/java/com/yxpj/springcloud/controller/OrderFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-feign-order8080/src/main/java/com/yxpj/springcloud/controller/OrderFeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign-order8080/target/classes/com/yxpj/springcloud/controller/OrderFeignController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-feign-order8080/target/classes/com/yxpj/springcloud/controller/OrderFeignController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yxpj/springcloud/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yxpj/springcloud/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +92,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Work\Programming\Java\WorkSpace\springcloud-notebook\atguiguCloud\cloud-provider-payment8002\src\main\resources\mapper" />
@@ -100,14 +112,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderFeignMain8080">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.OrderHystrixMain8080">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,57 +152,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderFeignMain8080" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-consumer-feign-order8080" />
+    <configuration name="OrderHystrixMain8080" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-consumer-feign-hystrix-order8080" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yxpj.springcloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yxpj.springcloud.OrderFeignMain8080" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yxpj.springcloud.OrderHystrixMain8080" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderMain80 (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="cloud-consumer-order80" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yxpj.springcloud.OrderMain80" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-provider-payment8001" />
+    <configuration name="PaymentHystrixMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-hystrix-payment8001" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yxpj.springcloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yxpj.springcloud.PaymentMain8001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentMain8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-provider-payment8002" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yxpj.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yxpj.springcloud.PaymentMain8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yxpj.springcloud.PaymentHystrixMain8001" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OrderFeignMain8080" />
-        <item itemvalue="Spring Boot.PaymentMain8002" />
-        <item itemvalue="Spring Boot.PaymentMain8001" />
+        <item itemvalue="Spring Boot.OrderHystrixMain8080" />
+        <item itemvalue="Spring Boot.PaymentHystrixMain8001" />
         <item itemvalue="Spring Boot.EurekaApplication7002" />
         <item itemvalue="Spring Boot.EurekaApplication7001" />
       </list>
@@ -215,7 +208,8 @@
       <workItem from="1642407329497" duration="3710000" />
       <workItem from="1642472099566" duration="11065000" />
       <workItem from="1642552795028" duration="12261000" />
-      <workItem from="1642604276353" duration="1076000" />
+      <workItem from="1642604276353" duration="9949000" />
+      <workItem from="1642659745580" duration="1768000" />
     </task>
     <servers />
   </component>
